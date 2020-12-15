@@ -53,9 +53,9 @@ require "requires/head_index.php"; ?>
     <img src="(../../img/Livres/Conte/alice_au_pays_des_merveilles.jpg" alt="Alice au pays des merveilles"></a>
     <figcaption><strong>Titre : </strong>Alice au pays des merveilles
       <br><strong>Auteur : </strong>Lewis Caroll
-      <br><strong>ISBN : </strong>978-2-01-000924-2
+      <br><strong>ISBN : </strong>978-2-01-000924-2hffud
       <br><strong>Editeur : </strong>Le Livre de Poche Jeunesse
-      <br><strong>Date de vdbdswpublication : </strong>20/08/2014
+      <br><strong>Date de publication : </strong>20/08/2014
     </figcaption>
   </div>
 </figure>
