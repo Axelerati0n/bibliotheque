@@ -10,6 +10,22 @@ require "requires/head_index.php"; ?>
       <a href="#top"><p id="scroll_to_top">Haut de page</p></a>
   </div>
 
+  <?php 
+    $link = mysqli_connect("localhost", "root", "", "biblio");
+      if(!$link){
+        echo "Erreur : Impossible de se connecter à MySQL." . PHP_EOL;
+        echo "Erreur de débogage : " . mysqli_connect_errno() . PHP_EOL;
+        echo "Erreur de débogage : " . mysqli_connect_error() . PHP_EOL;
+        exit;
+      }
+      echo "Succès : Une connexion correcte à MySQL a été faite! La base de donnée my_db est géniale." . PHP_EOL;
+      echo "Information d'hôte : " . mysqli_get_host_info($link) . PHP_EOL;
+    mysqli_close($link);   
+      
+      
+      
+      ?>
+
 <!--cellule BD-->
 
 <section id=BD>
