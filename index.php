@@ -1,6 +1,6 @@
 <?php $page_title = "Accueil";
 require "requires/head_index.php"; ?>
-
+<?php require "config.php";?>
 <?php require "requires/nav.php"; ?>
 
 <div class="marge"></div>
@@ -22,7 +22,7 @@ require "requires/head_index.php"; ?>
       }
 
         $req = "SELECT * FROM livre JOIN editeur  ON editeur.id=livre.editeur
-        JOIN auteur ON auteur.idLivre=livre.isbn JOIN personne ON personne.id=auteur.idPersonne WHERE idRole = 1;";
+        JOIN auteur ON auteur.idLivre=livre.isbn JOIN personne ON personne.id=auteur.idPersonne WHERE idRole = 1 ORDER BY titre;";
         $result = mysqli_query($link,$req);
 
 
@@ -35,8 +35,8 @@ require "requires/head_index.php"; ?>
 
       <div>
 
-          <a href=<?php echo "./redirections/" . $row["isbn"] . ".php"?>>
-          <div class=zoom><img src=<?php echo "(../../img/Livres/" . $row["isbn"] . ".jpg"?> alt="Justice league"></div></a>
+          <a href="<?php echo $CONFIG["root_path"]?>redirections/detail.php">
+          <div class=zoom><img src=<?php echo "{$CONFIG["root_path"]}img/Livres/{$isbn}.jpg"?> alt="<?php echo $isbn?>"></div></a>
 
           <ul class=liste>
             <li class=graouh>Titre : <?php echo $titre ?></li>

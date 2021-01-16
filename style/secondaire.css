@@ -35,7 +35,10 @@ header{
     background-color: rgba(189, 185, 185, 0.918);
   }
 
-
+  table{
+    text-align: center;
+    background-color: blue;
+  }
 
   /*Menu déroulant*/
 
@@ -185,14 +188,14 @@ h1{
   font-size: large;
   font-family: cursive;
 }
-strong {
+ strong{
   text-decoration: underline;
   font-weight: 900;
 }
 
 
 
-figure {
+figure{
   border: 4mm ridge rgb(65, 85, 249);
   padding: 5px;
   margin: auto;
@@ -220,7 +223,7 @@ h3{
 }
 fieldset{
   border: 3mm ridge rgb(65, 85, 249);
-  margin: 0 25% 2% 25%; 
+  margin: 0 25% 2% 25%;
   background-color: rgb(132, 210, 255);
 }
 legend{

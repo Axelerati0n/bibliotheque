@@ -51,3 +51,4 @@ require "../requires/head_header.php"; ?>
     </form>
     <p class="msg">N'hésitez pas à nous contacter ! Toute remarque nous fera extrêmement plaisir !</p>
 </section>
+</body>
