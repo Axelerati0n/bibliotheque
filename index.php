@@ -35,7 +35,7 @@ require "requires/head_index.php"; ?>
 
       <div>
 
-          <a href="<?php echo $CONFIG["root_path"]?>redirections/detail.php">
+          <a href=<?php echo "{$CONFIG["root_path"]}redirections/detail.php?isbn=" . $row["isbn"]?>>
           <div class=zoom><img src=<?php echo "{$CONFIG["root_path"]}img/Livres/{$isbn}.jpg"?> alt="<?php echo $isbn?>"></div></a>
 
           <ul class=liste>
