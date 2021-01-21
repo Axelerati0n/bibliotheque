@@ -15,7 +15,7 @@ require "requires/head_index.php"; ?>
   <div class=grid>
   <?php
 
-      $link = mysqli_connect("localhost", "biblioread", "biblioread", "bibliotheque");
+      $link = mysqli_connect("localhost", "root", "", "bibliotheque");
       if(!mysqli_set_charset($link,"utf8mb4")){
           printf("erreur lors du chargement du jeu de caractere utf8mb4 : %s\n", mysqli_error($link));
           exit();

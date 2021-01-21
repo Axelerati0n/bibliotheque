@@ -1,4 +1,4 @@
-<?php $page_title="en vrai flemme";
+<?php $page_title="secondaire";
 require "../requires/head_header.php";
 ?>
 <?php require "../config.php";?>
